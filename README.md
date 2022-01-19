@@ -75,8 +75,6 @@ Sketch (Free Body Diagram):
 <img src="/Images/OTC_Heat_Exchanger.png" width="300">
 
 
-
-
 	6.	Test 
 
 

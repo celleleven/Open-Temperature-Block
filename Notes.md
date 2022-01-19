@@ -19,3 +19,12 @@ Open Heat Block
 1. Finish Sequence Diagram
 2. Work on GitHub
 3.
+
+
+
+2022/01/19
+
+Cooling voltage with a fan
+Room = 29C
+
+2v = 31C

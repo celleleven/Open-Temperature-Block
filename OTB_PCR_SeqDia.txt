@@ -1,0 +1,66 @@
+title Open Temperture Block
+
+User->OTB: User turns on Units
+
+// Get heat exchanger temperature
+OTB->Heat Exchanger: Calibration; Get Temp
+
+// Get block temperature
+OTB-> Heating Block: Calibration; Get Temp
+
+
+// User Selects Protocol
+// PCR
+==PCR==
+User->OTB: Add DNA, Primer, TAQ
+// Loop 
+loop i < 25 to 35
+// Denaturation 90-95°C for 30 seconds
+OTB->Heating Block: Denaturation
+// Annealing 45-65°C for 30 seconds
+OTB->Heating Block: Annealing
+// Extension 68-72°C for 60 secconds
+OTB->Heating Block: Annealing
+end
+
+
+// Heat Shock (source: https://bityl.co/AXuq) 
+==Heat Shock\n==
+// Add Cells
+User->OTB: Add Cells
+// Chill
+OTB->Heating Block: Chill
+// Add Plasmid or Ligation
+User->OTB: Add DNA
+// Cool at XX°C for 30 minutes
+OTB->Heating Block: Chill
+// Heat at 42°C for 30 seconds
+OTB->Heating Block: Heat
+// Warm to 37°C for 60 minutes
+OTB->Heating Block: Heat
+// Add room temperature media
+User->OTB: Add media
+// Incubate
+OTB->Heating Block: Incubate
+
+// Incubation
+==Incubation==
+// Set Temperture: hot
+// Set Duration 
+
+
+// Hybernation 
+==Hybernation==
+// Set Temperture: cold 
+// Set Duration
+
+// Sterilization 
+==Sterilization== 
+// Set Temperture: hot
+// Set duration 
+
+
+
+
+
+

@@ -64,6 +64,7 @@ If I cut the track in half, and start at the vein.
 
 Sketch (Free Body Diagram):
 
+<img src="/Images/OpenTempertureBlock.png">
 
 
 	5.	Prototype 

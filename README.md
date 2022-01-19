@@ -7,12 +7,12 @@
 _**TL;DR**_ This guide shows the process for engineering, fabrication and operating of the OTB (Open Temperature Block).  The OTB is a bench tool for controlling the temperature of DIY biological experiments to include and not limited to PCR, heat shock, hibernation, and incubation.  
 
 
-###Background
+### Background
 
 
 
 
-##Engineering Design Process
+## Engineering Design Process
 
 	1.	Define the Problem: 
 
@@ -43,7 +43,7 @@ The goal is to create a DIY, open source, heating and cooling device for the use
 
 	4.	Select promising solution: 
 
-The engineered solution will use a Thermal Electric Cooler (TEC) and a heat exchanger.  To create the OTB there will be three systems; power, data, heat.
+The engineered solution will use a Thermal Electric Cooler (TEC) and a heat exchanger.  To create the OTB there will be three systems; power, data, and heat.
 
 
 <img src="/Images/TEC_function.gif">
@@ -55,6 +55,12 @@ The OTB data system is broken into device logic, and external control. Device lo
 The heat system consist of a Peltier, water block, pump, fan, and radiator.  In the heating phase, the microcontroller sends positive voltage to the Peltier.  In the cooling phase, the microcontroller sends a negative voltage to the Peltier.  Durning all heating and cooling operations the pump is moving water through the water block, through tubing, to the radiator and back to the water block.  The radiator uses an electric fan to blow air over the fins an exchange heat to the environment.
 
 MATH:
+
+<!--
+I have a circular track on this track there is a mine-cart.  The mine-cart picks up a payload (ore) at vein.  The payload moves to the collector is emptied and repeats.  The mine-cart has a continuous speed around the track.  There is a rate the ore can be loaded into the mine-cart, and there is a rate the ore can be removed to the collector.
+
+If I cut the track in half, and start at the vein.
+-->
 
 Sketch:
 
@@ -116,8 +122,9 @@ Sketch:
 
 ## Assembly
 ### Software
+This Sequence Diagram outlines the functions needed for the OTB.
 
-<img scr="Images/OTB_PCR_SeqDia.svg">
+<img src="Images/OTB_PCR_SeqDia.png" width=400>
 
 1. [Download Arduino IDE](https://www.arduino.cc/en/main/software)
 2. Download this Zip File to your computer
@@ -165,7 +172,7 @@ Sketch:
 4. Add solution to Cuvet and place in Open_Temperture_Block
 5. Click the button that reads "Run Sample"
 
-####  Get Michaelis-Menton Rate
+#### Get Michaelis-Menton Rate
 1. Plug-in Device
 2. Loading Splash will run on OLED Screen
 3. Remove Cuvet and allow for calibration
@@ -194,7 +201,7 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 
 
 
-##Fabrication
+## Fabrication
 
 Electronics
 
@@ -249,7 +256,7 @@ Heating Block
 
 
 
-#NOTE
+# NOTE
 **Material**
 Melting	Conductivity
 Aluminum 1221  239
@@ -259,14 +266,3 @@ Copper 1984 397
 Bismuth 520 7.97
 PLA	180 0.13
 Gallium 29.7 40.6
-
-
-
-
-
-
-
-
-
-
-100.

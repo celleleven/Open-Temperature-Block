@@ -43,7 +43,7 @@ The goal is to create a DIY, open source, heating and cooling device for the use
 
 	4.	Select promising solution: 
 
-The engineered solution will use a Thermal Electric Cooler (TEC) and a heat exchanger.  To create the OTB there will be three systems; power, data, and heat.
+The engineered solution will use a Thermal Electric Cooler (TEC) and a heat exchanger.  To create the OTB there will be three systems; power, data, and water-heat.
 
 
 <img src="/Images/TEC_function.gif">
@@ -52,7 +52,7 @@ The OTB is powered by 12V `17AMP` power supply. This will power the Peltier, fan
 
 The OTB data system is broken into device logic, and external control. Device logic describes the microcontroller interaction with the Peltier, Temperature Probes, input devices. To accurately control the Peltier the microcontroller supplies a PWM signal to the high-power motor controller. This will change the electrical duty cycle allowing for precise Peltier control. The microcontroller samples temperatures from two thermistors.  One thermistor is located on the heat block and the other is attached to the heat exchanger.  These values will provide the logic needed to safely control the heat and cooling operations. External control consists of an I2C slave data line, display with buttons, and Wifi. The I2C data line allows for sending and receiving data from a Master I2C device. The display consists of an OLED display, and four buttons.  The OLED in conjunction with the buttons allows the user to navigate through menus, and execute functions. Lastly, the Wifi provides a wireless gateway to Communicate with the OTB via web page and RESTapi.
 
-The heat system consist of a Peltier, water block, pump, fan, and radiator.  In the heating phase, the microcontroller sends positive voltage to the Peltier.  In the cooling phase, the microcontroller sends a negative voltage to the Peltier.  Durning all heating and cooling operations the pump is moving water through the water block, through tubing, to the radiator and back to the water block.  The radiator uses an electric fan to blow air over the fins an exchange heat to the environment.
+The water-heat system consist of a water block, pump, fan, and radiator.  In the heating phase, the microcontroller sends positive voltage to the Peltier.  In the cooling phase, the microcontroller sends a negative voltage to the Peltier.  Durning all heating and cooling operations the pump is moving water through the water block, through the tubing, to the radiator and back to the water block.  The radiator uses an electric fan to blow air over the fins an exchange heat to the environment.
 
 MATH:
 
@@ -62,7 +62,9 @@ I have a circular track on this track there is a mine-cart.  The mine-cart picks
 If I cut the track in half, and start at the vein.
 -->
 
-Sketch:
+Sketch (Free Body Diagram):
+
+
 
 	5.	Prototype 
 ### Temperture Block

@@ -88,9 +88,6 @@ Sketch (Free Body Diagram):
 ### Support Websites
 [Buy Open Soruce Open_Temperture_Block](https://www.celleleven.com/product/Open_Temperture_Block/)
 
-[Wikipedia](https://en.wikipedia.org/wiki/Michaelis%E2%80%93Menten_kinetics)
-
-[Background Experiment](https://user.eng.umd.edu/~nsw/ench485/lab14.htm)
 
 
 ## Hardware
@@ -130,7 +127,7 @@ This Sequence Diagram outlines the functions needed for the OTB.
 1. [Download Arduino IDE](https://www.arduino.cc/en/main/software)
 2. Download this Zip File to your computer
 3. Navigate to the ``Open_Temperture_Block Code`` folder
-4. Upload Polariemter Code to Arduino
+4. Upload Open_Temperture_Block.ino Code to Arduino
 
 ### Electronics
 1. Solder wires and components onto Arduino Sheild PCB
@@ -138,31 +135,19 @@ This Sequence Diagram outlines the functions needed for the OTB.
 <img src="/Images/OTB_Electronics_Prototype01.jpg" width="500">
 
 ### Case
-1. [Laser Cut or 3D Print Frame gcode](https://www.thingiverse.com/thing:4484626) <br>Roof<br>Base<br>Spine<br>Rib<br>Wall-Right<br>Wall-Left<br>Dash<br>Dash Stands x 2 <br> Cooling Block Top <br> Cooling Block Bottom<br>Buttons
+1. [Laser Cut or 3D Print Frame gcode]()
 
 ### Hardware
-1. Add Arduino to base with screws
-2. Attach Sheild to Arduino
-3. Fit RJ-11 Plug into Wall-Right hole and screw in T-slots
-4. Connect wires to JST-XHP connectors
-5. Add Fan to rib with screws
-
+1. Affix fan to radiator.
 <img src="/Images/fan_diagram.png" width="300">
-
-6. Attach rib to Wall-Right
-7. Snake wires through the rib
-8.  Attach 28BYJ-48 Stepper driver and motor to spine
-9. Add Wall-Left and screw in T-slots
-10. Connect JST-XHP wires to 29BYJ-48 Stepper
-11. Snake wires through the spine
-12. Assemble Cooling Block
-13. Attach Colling Block to Rib
-14. Add Roof and screw in T-Slots
-15. 16. Assemble the DashBoard
-16. Attach the remaining wire to the DashBoard
-17. Attach DashBoard to Roof and screw in T-slots
-18. Power On
-
+2. Affix power supply, microcontroller, motor controller, pump, radiator to base with screws
+3. Fit RJ-11 Plug into housing.
+4. Attach shield to microcontroller and connect JST-XHP wires to shield
+5. Assemble heating block.
+<br>...
+<br>...
+<br>...
+<br>...
 
 
 ## Directions

@@ -69,7 +69,7 @@ void loop() {
   bool Heating = HIGH;
   Temperature(); // Gets thermistors current temperture
   if (Tc < 90 && Heating == HIGH) {
-    analogWrite(RPWM, 0 );
+    analogWrite(RPWM, 255 );
     analogWrite(LPWM, 0);
     Serial.print("Temperture = ");
     Serial.println(Tc);

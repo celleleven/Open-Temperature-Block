@@ -88,8 +88,6 @@ Sketch (Free Body Diagram):
 ### Support Websites
 [Buy Open Soruce Open_Temperture_Block](https://www.celleleven.com/product/Open_Temperture_Block/)
 
-
-
 ## Hardware
 | QTY | Name | Quanity | Cost | Item Cost | Total Cost | URL |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -116,6 +114,11 @@ Sketch (Free Body Diagram):
 | 1 | DC-DC Buck | 1 | 30 | 30 | 30 | https://amzn.to/3Gn74iR |
 
  **Total** $565.88
+
+ ## Fabrication
+
+
+
 
 
 ## Assembly
@@ -151,24 +154,10 @@ This Sequence Diagram outlines the functions needed for the OTB.
 
 
 ## Directions
-#### Get Solution Rotation Angle
-1. Plug-in Device
-2. Loading Splash will run on OLED Screen
-3. Remove Cuvet and allow for calibration
-4. Add solution to Cuvet and place in Open_Temperture_Block
-5. Click the button that reads "Run Sample"
-
-#### Get Michaelis-Menton Rate
-1. Plug-in Device
-2. Loading Splash will run on OLED Screen
-3. Remove Cuvet and allow for calibration
-4. Add solution to Cuvet and place in Open_Temperture_Block
-5. Click the button that reads "Michaelis-Menton Kinetics"
 
 
 ## Trouble Shooting
-1. Recalibrate
-2. Go to settings and change EPROMS calibration values
+
 
 ## Authors
 
@@ -186,8 +175,8 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 
 
 
+<!--
 
-## Fabrication
 
 Electronics
 
@@ -252,3 +241,4 @@ Copper 1984 397
 Bismuth 520 7.97
 PLA	180 0.13
 Gallium 29.7 40.6
+-->

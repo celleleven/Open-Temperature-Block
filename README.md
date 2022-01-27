@@ -2,9 +2,9 @@
 <img src="/Images/Open_Temperture_Block.png" width="300">
 </p>
 
-# Open Temperture Block
+# Open Temperature Block
 
-_**TL;DR**_ This guide shows the process for engineering, fabrication and operating of the OTB (Open Temperature Block).  The OTB is a bench tool for controlling the temperature of DIY biological experiments to include and not limited to PCR, heat shock, hibernation, and incubation.  
+_**TL;DR**_ This guide shows the process for engineering, fabrication, and operating of the OTB (Open Temperature Block).  The OTB is a bench tool for controlling the temperature of DIY biological experiments to include and is not limited to PCR, heat shock, hibernation, and incubation.  
 
 
 ### Background
@@ -16,7 +16,7 @@ _**TL;DR**_ This guide shows the process for engineering, fabrication and operat
 
 	1.	Define the Problem: 
 
-The goal is to create a DIY, open source, heating and cooling device for the use in biological experiments.  The DIY portion of this device will be assembled using basic tools. Being open source allows for revision, evolution, and free dissemination.  The heating control will allow for PCR reactions, heat shock experiments, incubation, and hibernation.
+The goal is to create a DIY, open-source, heating and cooling device for use in biological experiments.  The DIY portion of this device will be assembled using basic tools. Being open-source allows for revision, evolution, and free dissemination.  The heating control will allow for PCR reactions, heat shock experiments, incubation, and hibernation.
 
 	2.	Identify Constraints: 
 
@@ -26,9 +26,9 @@ The goal is to create a DIY, open source, heating and cooling device for the use
 | Weight | For shipping lighter is better |
 | Cost | < $1000 USD (Competitor range: $900 <-> $20K, Average $5k )
 | Power | 120VAC and 240VAC input
-| Temperture Range |  ≤ 3°C to ≥ 100°C for a duration of < 30 Minutes |
+| Temperature Range |  ≤ 3°C to ≥ 100°C for a duration of < 30 Minutes |
 |Componets| Readily sourced; electronics, hardware, microcontroller|
-| Decibles | 60 decibels
+| Decibels | 60 decibels
 | Water Tight | Does not leak
 | Geometry | Rectangular
 | Cleanability | Allows for cleaning.
@@ -37,8 +37,8 @@ The goal is to create a DIY, open source, heating and cooling device for the use
 	3.	Brainstorm: 
   | Idea | Pro | Con |
   | ----- | -----| ----- |
-  |Peltier (TEC)| Cost effective, heats and cools, small size| Uses a lot of power to remove heat.
-  |Heat Element| Cost effective, any size filament|  Doesn't cool
+  |Peltier (TEC)| Cost-effective, heats and cools, small size| Uses a lot of power to remove heat.
+  |Heat Element| Cost-effective, any size filament|  Doesn't cool
   |Compressor heat exchanger|Power Efficient|Expensive, Slow, not DIY.
 
 	4.	Select promising solution: 
@@ -50,14 +50,14 @@ The engineered solution will use a Thermal Electric Cooler (TEC) and a heat exch
 
 The OTB is powered by 12V `17AMP` power supply. This will power the Peltier, fans, pump, and microcontroller.
 
-The OTB data system is broken into device logic, and external control. Device logic describes the microcontroller interaction with the Peltier, Temperature Probes, input devices. To accurately control the Peltier the microcontroller supplies a PWM signal to the high-power motor controller. This will change the electrical duty cycle allowing for precise Peltier control. The microcontroller samples temperatures from two thermistors.  One thermistor is located on the heat block and the other is attached to the heat exchanger.  These values will provide the logic needed to safely control the heat and cooling operations. External control consists of an I2C slave data line, display with buttons, and Wifi. The I2C data line allows for sending and receiving data from a Master I2C device. The display consists of an OLED display, and four buttons.  The OLED in conjunction with the buttons allows the user to navigate through menus, and execute functions. Lastly, the Wifi provides a wireless gateway to Communicate with the OTB via web page and RESTapi.
+The OTB data system is broken into device logic and external control. Device logic describes the microcontroller interaction with the Peltier, Temperature Probes, input devices. To accurately control the Peltier the microcontroller supplies a PWM signal to the high-power motor controller. This will change the electrical duty cycle allowing for precise Peltier control. The microcontroller samples temperatures from two thermistors.  One thermistor is located on the heat block and the other is attached to the heat exchanger.  These values will provide the logic needed to safely control the heat and cooling operations. External control consists of an I2C slave data line, display with buttons, and Wifi. The I2C data line allows for sending and receiving data from a Master I2C device. The display consists of an OLED display and four buttons.  The OLED in conjunction with the buttons allows the user to navigate through menus, and execute functions. Lastly, the Wifi provides a wireless gateway to Communicate with the OTB via a web page and RESTapi.
 
-The water-heat system consist of a water block, pump, fan, and radiator.  In the heating phase, the microcontroller sends positive voltage to the Peltier.  In the cooling phase, the microcontroller sends a negative voltage to the Peltier.  Durning all heating and cooling operations the pump is moving water through the water block, through the tubing, to the radiator and back to the water block.  The radiator uses an electric fan to blow air over the fins an exchange heat to the environment.
+The water-heat system consists of a water block, pump, fan, and radiator.  In the heating phase, the microcontroller sends positive voltage to the Peltier.  In the cooling phase, the microcontroller sends a negative voltage to the Peltier.  Durning all heating and cooling operations the pump is moving water through the water block, through the tubing, to the radiator, and back to the water block.  The radiator uses an electric fan to blow air over the fins and exchange heat to the environment.
 
 MATH:
 
 <!--
-I have a circular track on this track there is a mine-cart.  The mine-cart picks up a payload (ore) at vein.  The payload moves to the collector is emptied and repeats.  The mine-cart has a continuous speed around the track.  There is a rate the ore can be loaded into the mine-cart, and there is a rate the ore can be removed to the collector.
+I have a circular track on this track there is a mine-cart.  The mine-cart picks up a payload (ore) at the vein.  The payload moves to the collector are emptied and repeats.  The mine-cart has a continuous speed around the track.  There is a rate the ore can be loaded into the mine cart, and there is a rate the ore can be removed to the collector.
 
 If I cut the track in half, and start at the vein.
 -->
@@ -86,10 +86,10 @@ Sketch (Free Body Diagram):
 
 
 ### Support Websites
-[Buy Open Soruce Open_Temperture_Block](https://www.celleleven.com/product/Open_Temperture_Block/)
+[Buy Open Source Open_Temperture_Block](https://www.celleleven.com/product/Open_Temperture_Block/)
 
 ## Hardware
-| QTY | Name | Quanity | Cost | Item Cost | Total Cost | URL |
+| QTY | Name | Quantity | Cost | Item Cost | Total Cost | URL |
 | --- | --- | --- | --- | --- | --- | --- |
 | 6 | Peltier | 10 | 28.99 | 2.899 | 17.394 | https://amzn.to/3pDVF7H |
 | 2 | 120x40 Water Cooling Block | 2 | 18.99 | 9.495 | 18.99 | https://amzn.to/3pyl8zk |
@@ -141,11 +141,11 @@ This Sequence Diagram outlines the functions needed for the OTB.
 1. [Laser Cut or 3D Print Frame gcode]()
 
 ### Hardware
-1. Affix fan to radiator.
+1. Affix fan to the radiator.
 <img src="/Images/fan_diagram.png" width="300">
-2. Affix power supply, microcontroller, motor controller, pump, radiator to base with screws
+2. Affix power supply, microcontroller, motor controller, pump, radiator to the base with screws
 3. Fit RJ-11 Plug into housing.
-4. Attach shield to microcontroller and connect JST-XHP wires to shield
+4. Attach shield to the microcontroller and connect JST-XHP wires to shield
 5. Assemble heating block.
 <br>...
 <br>...
@@ -182,7 +182,7 @@ Electronics
 
 Wire Arduino Uno with dashboard circuit, RJ11 port, two thermistors, ~~Ultra sonic Sensor~~ BTS7960, fan, and water pump.
 
-Wire Peltier's to DTS7960 and 12VAC power supply to circuit.
+Wire Peltier's to DTS7960 and 12VAC power supply to the circuit.
 
 Physically validate wires are correctly installed using a voltmeter to verify continuity.  
 
@@ -198,7 +198,7 @@ Coding
 
 2. Code the setup script. Debug any errors.
 
-3. Code the thermistor function. Debug any errors. Upload to Arduino and calibrate.  Repeat previous steps for second thermistor.   
+3. Code the thermistor function. Debug any errors. Upload to Arduino and calibrate.  Repeat previous steps for the second thermistor.   
 
 4. Code the DTS7960 function. Debug any errors.
 
@@ -214,9 +214,9 @@ Heating Block
 2. Fabricate heat transfer plate; Mark dimensions, oil, cut, clean, and deburr.
 3. Tape plates together, drill and tap four 4mm holes for screws, deburr, and clean.
 4. Assemble block by stacking bottom plate, water block, Peltier, and top plate and screwing together, being cautious not to crack the TEC units.  **NOTE: Should I use Thermal Paste?**
-5. Attach plastic tubbing.  Using a razor blade cut two long pieces of PVC tubing (xx mm) length and 1 short piece of PVC tubing (xx mm) in length. Attach short piece on the inner two barbs of the heating block. **NOTE: Do this before assmeby, unless barbs are easy to access**
+5. Attach plastic tubbing.  Using a razor blade cut two long pieces of PVC tubing (xx mm) length and 1 short piece of PVC tubing (xx mm) in length. Attach a short piece on the inner two barbs of the heating block. **NOTE: Do this before assembly, unless barbs are easy to access**
 6. Wire management, using zip ties align the Peltier wires in the same direction as the PVC tubes.
-7. Tin TEC wires and power wires.  Add heat shrink to all TEC wires. Crimp on ring connectors to 12 TEC wires and two power wires.  Connect all rings using nut and bolt. Heat shrink terminal junction.
+7. Tin TEC wires and power wires.  Add heat shrink to all TEC wires. Crimp-on ring connectors to 12 TEC wires and two power wires.  Connect all rings using a nut and bolt. Heat shrink terminal junction.
 
 
 

@@ -48,12 +48,18 @@ The engineered solution will use a Thermal Electric Cooler (TEC) and a heat exch
 
 <img src="/Images/TEC_function.gif">
 
-The OTB is powered by 12V `17AMP` power supply. This will power the Peltier, fans, pump, and microcontroller.
+The OTB is powered by a 12V 17AMP power supply. This will power the Peltier, fans, pump, and a voltage regulator will step down the 12V to 5V for the microcontroller.
 
 The OTB data system is broken into device logic and external control. Device logic describes the microcontroller interaction with the Peltier, Temperature Probes, input devices. To accurately control the Peltier the microcontroller supplies a PWM signal to the high-power motor controller. This will change the electrical duty cycle allowing for precise Peltier control. The microcontroller samples temperatures from two thermistors.  One thermistor is located on the heat block and the other is attached to the heat exchanger.  These values will provide the logic needed to safely control the heat and cooling operations. External control consists of an I2C slave data line, display with buttons, and Wifi. The I2C data line allows for sending and receiving data from a Master I2C device. The display consists of an OLED display and four buttons.  The OLED in conjunction with the buttons allows the user to navigate through menus, and execute functions. Lastly, the Wifi provides a wireless gateway to Communicate with the OTB via a web page and RESTapi.
 
 The water-heat system consists of a water block, pump, fan, and radiator.  In the heating phase, the microcontroller sends positive voltage to the Peltier.  In the cooling phase, the microcontroller sends a negative voltage to the Peltier.  Durning all heating and cooling operations the pump is moving water through the water block, through the tubing, to the radiator, and back to the water block.  The radiator uses an electric fan to blow air over the fins and exchange heat to the environment.
 
+
+**Sketch (Free Body Diagram):**
+
+<img src="/Images/OpenTempertureBlock.png">
+
+<br><br>
 MATH:
 
 <!--
@@ -62,20 +68,34 @@ I have a circular track on this track there is a mine-cart.  The mine-cart picks
 If I cut the track in half, and start at the vein.
 -->
 
-Sketch (Free Body Diagram):
-
-<img src="/Images/OpenTempertureBlock.png">
-
-
 	5.	Prototype 
 ### Temperture Block
-<img src="/Images/Open_Temperture_Block.png" width="300">
+<img src="/Images/Open_Temperture_Block.png" width="300"> <br>Parametric Model.
+
+<img src="/Images/OT_block_002.png" width="300"> <br>Version 1<br>
+
 
 ### Heat Exchanger and Power Train
 <img src="/Images/OTC_Heat_Exchanger.png" width="300">
+<br>Parametric Model.<br>
+
+<img src="/Images/OTB_Controller.png" width="300">
+<br>Version 1<br>
+
+### Logic Controller
+
+<img src="/Images/OTB_Circuit.png" width="300">
+<br>Version 1<br>
+
+### Software Interface
+
+<img src="/Images/OTB_web_interface.png" width="300">
+<br>Version 1<br>
 
 
 	6.	Test 
+### PCR Test Over 35 Cycles
+<img src="/Images/GRAPHpcr.png" width="300">
 
 
 	7.	Iterate 
@@ -86,8 +106,8 @@ Sketch (Free Body Diagram):
 
 
 ### Support Websites
-[Buy Open Source Open_Temperture_Block](https://www.celleleven.com/product/Open_Temperture_Block/)
-
+<!---[Buy Open Source Open_Temperture_Block](https://www.celleleven.com/product/Open_Temperture_Block/)
+--->
 ## Hardware
 | QTY | Name | Quantity | Cost | Item Cost | Total Cost | URL |
 | --- | --- | --- | --- | --- | --- | --- |

@@ -72,7 +72,7 @@ If I cut the track in half, and start at the vein.
 ### Temperture Block
 <img src="/Images/Open_Temperture_Block.png" width="300"> <br>Parametric Model.
 
-<img src="/Images/OT_block_002.png" width="300"> <br>Version 1<br>
+<img src="/Images/OT_Block_002.png" width="300"> <br>Version 1<br>
 
 
 ### Heat Exchanger and Power Train

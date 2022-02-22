@@ -95,7 +95,7 @@ If I cut the track in half, and start at the vein.
 
 	6.	Test 
 ### PCR Test Over 35 Cycles
-<img src="/Images/GRAPHpcr.png" width="300">
+<img src="/Images/graphPCR.png" width="300">
 
 
 	7.	Iterate 

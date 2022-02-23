@@ -184,8 +184,9 @@ This Sequence Diagram outlines the functions needed for the OTB.
 * **[S James Parsons Jr](https://www.linkedin.com/in/sjamesparsonsjr/)**
 
 ## Purchase
+<!--
 [![Donation](https://i1.wp.com/calumetartcenter.com/wp-content/uploads/2013/02/paypal-buy-now-button.png?fit=284%2C136&ssl=1)](https://i1.wp.com/calumetartcenter.com/wp-content/uploads/2013/02/paypal-buy-now-button.png?fit=284%2C136&ssl=1)
-
+-->
 
 
 ## License
